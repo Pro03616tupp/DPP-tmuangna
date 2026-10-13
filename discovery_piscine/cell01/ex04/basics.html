@@ -5,29 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basics</title>
     <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+        }
+
         h1 {
+            color: white;
             text-align: center;
             font-size: 60px;
-            margin-top: 80px;
-            font-family: Arial, sans-serif; 
         }
+
         .image-container {
             display: flex;
             justify-content: center;
             gap: 20px;
             margin-top: 30px;
         }
-        .image-container img {
-            max-width: 400px;
+
+        .shop {
+            text-align: center;
+        }
+
+        .shop img {
+            width: 300px;
+            max-width: 100%;
             height: auto;
         }
 
-        .image-container a img {
-            cursor: pointer;
+        .shop a {
+            display: block;
+            margin-top: 10px;
+        }
+
+        hr {
+            margin-top: 30px;
+        }
+
+        footer {
+            text-align: right;
+            font-style: italic;
+            font-family: monospace;
         }
     </style>
 </head>
 <body>
-    
+
+    <h1>Online Shopping GAME &#9733;</h1>
+
+    <div class="image-container">
+        <div class="shop">
+            <img src="https://avatars.githubusercontent.com/u/14803619?s=280&v=4"
+                 alt="itch.io">
+            <a href="https://itch.io/">
+                itch.io
+            </a>
+        </div>
+
+        <div class="shop">
+            <img src="https://yt3.googleusercontent.com/ytc/AIdro_mf-6XIwzf6tkQKRggITGdD2Ql0RSNIU1zoPvdAN9i86zI=s900-c-k-c0x00ffffff-no-rj"
+                 alt="eBay">
+            <a href="https://store.steampowered.com/">
+                steam
+            </a>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        &copy; tmuangna 2026
+    </footer>
+
 </body>
 </html>
