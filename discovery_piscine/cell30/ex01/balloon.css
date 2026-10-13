@@ -1,0 +1,15 @@
+body {
+    min-height: 100vh;          
+    margin: 0;
+    display: flex;
+    justify-content: center;    /* อยากวางตรงกลางเฉยๆ */
+    align-items: center;        
+}
+
+#balloon {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+}
