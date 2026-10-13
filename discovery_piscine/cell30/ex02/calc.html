@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+
+</head>
+
+<body>
+
+    
+    <form id="calculator"> <!-- ส่วนช่องกรอก เครื่องหมาย ปุ่มเอาไว้คำนวณ -->
+        <label for="left">First number</label>
+        <input type="text" id="left" inputmode="numeric">
+
+        <label for="operator">Operator</label>
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+
+        <label for="right">Second number</label>
+        <input type="text" id="right" inputmode="numeric">
+
+        <input type="submit" value="Try me!">
+    </form>
+
+    <script src="calc.js"></script>
+</body>
+</html>

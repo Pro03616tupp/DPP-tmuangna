@@ -1,0 +1,20 @@
+body {
+    min-height: 100vh;       /* เอาเต็มหน้าจอไปเลยย */
+    margin: 0;
+    display: grid;
+    place-items: center;     /* วางเอามาอยู่กลาง */
+    font-family: Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;  /* เรียงช่องต่าง เอาจากบนลงล่าง */
+    gap: 8px;
+    width: 280px;
+    padding: 20px;
+    border: 1px solid #2f00ff;
+}
+
+input, select {
+    padding: 8px;
+}
