@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 24px;
+}
+
+#calculator {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+#left,
+#right {
+  width: 100px;
+}
