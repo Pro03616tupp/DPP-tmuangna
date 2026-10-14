@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #e7eef4, #f8f4ef);
+  color: #263746;
+  font-family: Arial, sans-serif;
+}
+
+.profile-card {
+  width: min(100%, 360px);
+  overflow: hidden;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 16px 40px #26374624;
+}
+
+.card-header {
+  padding: 20px;
+  background: #263746;
+  color: white;
+  text-align: center;
+}
+
+.card-header h1 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 24px;
+  text-align: center;
+}
+
+.login {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.description {
+  margin: 10px 0 20px;
+  color: #73808a;
+}
+
+.info-table {
+  width: 100%;
+  margin-bottom: 22px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.info-table th,
+.info-table td {
+  padding: 7px 4px;
+  border: 0;
+}
+
+.info-table th {
+  width: 38%;
+  color: #73808a;
+  font-weight: normal;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons img {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.contact-button {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border: 0;
+  background: #263746;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-button:hover,
+.contact-button:focus-visible {
+  background: #40586a;
+}
