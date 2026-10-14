@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNCF Sandwich</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <span class="brand">SNCF <span aria-hidden="true">✦</span></span>
+      <p class="eyebrow">THE STATION CAFÉ · PARIS</p>
+      <h1>แซนด์วิชสำหรับทุกเส้นทาง</h1>
+      <p class="intro">เลือกเมนูที่ชอบ แล้วออกเดินทางไปพร้อมรสชาติใหม่</p>
+    </header>
+
+    <nav class="menu-bar" aria-label="เมนูแซนด์วิช">
+      <ul class="menu-root">
+        <li class="menu-item">
+          <button class="menu-trigger" type="button" aria-haspopup="true">
+            ดูเมนูแซนด์วิช
+            <span class="arrow" aria-hidden="true">⌄</span>
+          </button>
+
+          <ul class="submenu">
+            <li><a href="#jambon">Jambon-Beurre <span>€6</span></a></li>
+            <li><a href="#fromage">Fromage <span>€5</span></a></li>
+            <li><a href="#vegetarien">Végétarien <span>€7</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="selection" aria-labelledby="selection-title">
+      <p class="eyebrow">FRESH FROM THE STATION</p>
+      <h2 id="selection-title">เลือกอร่อยได้ทุกสถานี</h2>
+
+      <div class="cards">
+        <article class="card" id="jambon">
+          <span class="card-number">01</span>
+          <h3>Jambon-Beurre</h3>
+          <p>แฮม เนย และบาแก็ตสไตล์ฝรั่งเศส</p>
+        </article>
+        <article class="card" id="fromage">
+          <span class="card-number">02</span>
+          <h3>Fromage</h3>
+          <p>ชีสหอม ๆ ในขนมปังอบใหม่</p>
+        </article>
+        <article class="card" id="vegetarien">
+          <span class="card-number">03</span>
+          <h3>Végétarien</h3>
+          <p>ผักสดและซอสสูตรพิเศษ</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">BON APPÉTIT · PARIS → LYON</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.menu-item {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-item:hover .submenu,
+.menu-item:focus-within .submenu {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
