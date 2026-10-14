@@ -12,14 +12,13 @@ function saveTodos() {
         "; Max-Age=31536000; Path=/; SameSite=Lax";
 }
 
-// สร้าง div ของรายการใหม่
 function addTodo(text) {
-    const todo = document.createElement("div");
+    const todo = document.createElement("div"); // สร้าง div ของรายการใหม่
     todo.className = "todo";
     todo.textContent = text;
 
-    // เมื่อคลิกรายการ ให้ถามก่อนลบ
-    todo.addEventListener("click", function () {
+
+    todo.addEventListener("click", function () {   // เมื่อคลิกรายการ ให้ถามก่อนลบ
         if (confirm("Delete this TO DO?\n" + text)) {
             todo.remove(); // ลบออกจาก DOM จริง
             saveTodos();   // บันทึกที่เหลือไว้ด้วย
@@ -29,9 +28,8 @@ function addTodo(text) {
     list.prepend(todo); // เอาอันใหม่ไว้บนสุด
 }
 
-// โหลดรายการที่เคยบันทึกไว้ใน cookie
 function loadTodos() {
-    const cookie = document.cookie
+    const cookie = document.cookie // โหลดที่เคยบันทึกไว้ใน cookie
         .split(";")
         .map(function (part) {
             return part.trim();
