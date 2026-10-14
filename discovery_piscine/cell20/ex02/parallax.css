@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.photo {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+.photo-first {
+  background-color: #4d5a59;
+  background-image:
+    linear-gradient(#0006, #0006),
+    url("C:\\Users\\User\\Downloads\\DPP-tmuangna-main\\DPP-tmuangna\\discovery_piscine\\cell20\\ex02\\img\\spice.gif");
+}
+
+.photo-second {
+  background-color: #596873;
+  background-image:
+    linear-gradient(#0006, #0006),
+    url("C:\\Users\\User\\Downloads\\DPP-tmuangna-main\\DPP-tmuangna\\discovery_piscine\\cell20\\ex02\\img\\img_7260.avif");
+}
+
+.photo h1,
+.photo h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  text-shadow: 0 2px 12px #0009;
+}
+
+.message {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  background: #050505;
+  color: white;
+  text-align: center;
+}
+
+.message p {
+  margin: 0;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  line-height: 1.5;
+}
