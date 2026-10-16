@@ -1,4 +1,5 @@
 body {
+    background-color: rgb(156, 139, 254);
     min-height: 100vh;       /* เอาเต็มหน้าจอไปเลยย */
     margin: 0;
     display: grid;

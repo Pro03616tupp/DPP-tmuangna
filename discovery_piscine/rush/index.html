@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CineMe - แบบทดสอบ: แนวหนังที่ใช่สำหรับคุณ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="moive.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#home">CineMe</a>
+  <button class="menu-btn" id="menuBtn" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+  <nav id="menu">
+    <a href="#home">หน้าแรก</a>
+    <a href="#how">วิธีเล่น</a>
+    <a href="#quiz">เริ่มทดสอบ</a>
+    <a href="#genres">แนวหนัง</a>
+  </nav>
+</header>
+<main>
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>แนวหนังไหน<br>คือตัวตนของคุณ?</h1>
+      <p>ตอบ 10 คำถามสั้น ๆ เกี่ยวกับชีวิตประจำวัน แล้วเราจะบอกว่าคุณเหมาะกับหนังแนวไหนที่สุด พร้อมรายชื่อหนังให้ไปดูต่อ</p>
+      <a class="btn" href="#quiz" id="heroStart">เริ่มเลย</a>
+    </div>
+    <div class="hero-image">
+      <img src="assets/xGwDeehYUPAaTZqSeuHUv8.jpg" alt="ภาพประกอบจอภาพยนตร์" width="500" height="300">
+    </div>
+  </section>
+
+  <section id="how" class="band">
+    <h2>วิธีเล่น</h2>
+    <ol class="steps">
+      <li><strong>อ่านคำถาม</strong><span>มีทั้งหมด 10 ข้อ แสดงทีละข้อ ไม่มีจับเวลา</span></li>
+      <li><strong>เลือกคำตอบที่ใช่ที่สุด</strong><span>ไม่มีถูกผิด เลือกตามความรู้สึกแรกได้เลย</span></li>
+      <li><strong>รับตั๋วผลลัพธ์</strong><span>ดูแนวหนังของคุณ เปอร์เซ็นต์ทุกแนว และหนังแนะนำ</span></li>
+    </ol>
+  </section>
+
+  <section id="quiz" class="quiz-wrap" aria-live="polite">
+    <div class="ticket" id="startScreen">
+      <h2>ตั๋วเข้าชมของคุณ</h2>
+      <p> กดปุ่มด้านล่างเมื่อพร้อมเริ่มเล่นแล้ว </p>
+      <button class="btn" id="startBtn">รับตั๋วและเริ่มเล่น</button>
+    </div>
+
+    <div class="ticket" id="questionScreen" hidden>
+      <div class="progress-row">
+        <span id="counter">ข้อ 1 จาก 10</span>
+        <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" id="progress"><div id="bar"></div></div>
+      </div>
+      <h2 id="questionText"></h2>
+      <div class="answers" id="answers"></div>
+      <div class="quiz-buttons">
+        <button class="back-button" id="backButton" type="button">← ย้อนกลับ</button>
+        <button class="btn" id="nextButton" type="button">ข้อต่อไป →</button>
+      </div>
+    </div>
+
+    <div class="ticket result" id="resultScreen" hidden>
+      <p class="small">แนวหนังของคุณคือ</p>
+      <h2 id="rName"></h2>
+      <p id="rDesc"></p>
+      <p class="small">หนังที่น่าจะถูกใจ: <strong id="rMovies"></strong></p>
+      <div class="scores" id="scores"></div>
+      <button class="btn" id="restartBtn">เล่นอีกครั้ง</button>
+    </div>
+  </section>
+
+  <section id="genres" class="band">
+    <h2>5 แนวหนังในแบบทดสอบ</h2>
+    <div class="genre-grid" id="genreGrid"></div>
+  </section>
+</main>
+
+<footer>สร้างโดยทีม หมึกดำ · Discovery Piscine Rush</footer>
+<script src="moive.js"></script>
+</body>
+</html>
